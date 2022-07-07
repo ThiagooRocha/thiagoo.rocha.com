@@ -10,7 +10,6 @@ setTimeout(() => {
   clearTimeout(animateText);
 }, 1500);
 
-
 // IMG EXPANDED  ==========================
 const boxAnimate = document.querySelector(".box-animate");
 const imgBox = document.querySelector(".img-box");
@@ -25,18 +24,13 @@ function expandedImg() {
   rightAbout.classList.add("expandedImg");
 }
 
-
 ScrollReveal({
   origin: "bottom",
   distance: "30px",
   duration: "700",
-}).reveal(
-  "#about .infos-about"
-);
+}).reveal("#about .infos-about");
 ScrollReveal({
   origin: "left",
   distance: "30px",
   duration: "700",
-}).reveal(
-  "#about .right-about, #projects .card, #projects"
-);
+}).reveal("#about .right-about, #projects .card, #projects");
