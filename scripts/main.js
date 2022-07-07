@@ -10,6 +10,9 @@ setTimeout(() => {
   clearTimeout(animateText);
 }, 1500);
 
+
+
+
 // IMG EXPANDED  ==========================
 const boxAnimate = document.querySelector(".box-animate");
 const imgBox = document.querySelector(".img-box");
@@ -18,12 +21,32 @@ const rightAbout = document.querySelector(".right-about");
 boxAnimate.addEventListener("mouseenter", expandedImg);
 imgBox.addEventListener("mouseleave", () => {
   rightAbout.classList.remove("expandedImg");
+  closeOverlay()
 });
 
 function expandedImg() {
   rightAbout.classList.add("expandedImg");
+  createOverlay()
 }
 
+function createOverlay() {
+  let beforeElement = document.createElement("div")
+  beforeElement.addEventListener("click" , closeOverlay)
+  beforeElement.classList.add("before-div")
+  about.appendChild(beforeElement)
+}
+
+function closeOverlay(){ 
+  let beforeDiv = document.querySelector(".before-div")
+  if(beforeDiv.parentNode){
+    beforeDiv.parentNode.removeChild(beforeDiv)
+  }
+  rightAbout.classList.remove("expandedImg")
+}
+
+
+
+// ANIMATE SCROLL  ==========================
 ScrollReveal({
   origin: "bottom",
   distance: "30px",
