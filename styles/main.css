@@ -679,8 +679,7 @@ body.mobile #header nav {
   background-color: var(--hovers);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; 
 }
-#header nav::before {
-  content: "";
+#header nav .before-nav {
   position: fixed;
   width: 40vw;
   height: 100vh;
