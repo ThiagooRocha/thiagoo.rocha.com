@@ -49,7 +49,7 @@ const showmoreBtn = document.querySelector(".showmore-btn")
 showmoreBtn.addEventListener("click" , () => {
   let moreProjects = document.querySelector(".more-projects")
   moreProjects.classList.toggle("moreProjects")
-  if(moreProjects.classList.contains("more-projects")){
+  if(moreProjects.classList.contains("moreProjects")){
     showmoreBtn.innerText = "ver menos"
   } else {
     showmoreBtn.innerText = "ver mais"
