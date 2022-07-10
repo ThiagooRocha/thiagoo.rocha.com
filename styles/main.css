@@ -304,10 +304,11 @@ img {
   filter: grayscale(80%);
   border-radius: 50%;
   border: 0.3rem solid var(--color-dark-grey);
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbueGhONl6fZa2W9MPhgW38ZmJciwTIREeQ&usqp=CAU");
+  background-color: var(--hovers);
+  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbueGhONl6fZa2W9MPhgW38ZmJciwTIREeQ&usqp=CAU");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 #about .right-about.expandedImg .img-box {
   width: 30rem;
@@ -464,10 +465,12 @@ img {
   height: 100%;
   border-radius: 0.3rem;
 }
+.showmore-projects{
+  margin: 0 auto;
+}
 .more-projects {
   margin-top: 10rem;
   margin-inline: auto;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   display: flex;
