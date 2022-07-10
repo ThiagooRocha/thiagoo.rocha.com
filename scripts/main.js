@@ -44,6 +44,17 @@ function closeOverlay(){
   rightAbout.classList.remove("expandedImg")
 }
 
+// SHOW MORE PROJECTS
+const showmoreBtn = document.querySelector(".showmore-btn")
+showmoreBtn.addEventListener("click" , () => {
+  let moreProjects = document.querySelector(".more-projects")
+  moreProjects.classList.toggle("moreProjects")
+  if(moreProjects.classList.contains("more-projects")){
+    showmoreBtn.innerText = "ver menos"
+  } else {
+    showmoreBtn.innerText = "ver mais"
+  }
+})
 
 
 // ANIMATE SCROLL  ==========================
@@ -56,4 +67,4 @@ ScrollReveal({
   origin: "left",
   distance: "30px",
   duration: "700",
-}).reveal("#about .right-about, #projects .card, #projects");
+}).reveal("#about .right-about, #projects .projects-cards .card");
