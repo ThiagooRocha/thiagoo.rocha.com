@@ -257,12 +257,12 @@ img {
   padding: 1rem;
   cursor: pointer;
   border-radius: 0.8rem;
+  transition: all 0.2s ease-in-out;
   box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset,
     rgb(0 0 0 / 30%) 0px 18px 36px -18px inset;
 }
 #about .infos-about .technologies li:hover {
-  transition: all 0.2s ease-in-out;
-  transform: translateY(-5%);
+  transform: translateY(-10%);
 }
 #about .right-about {
   position: relative;
@@ -332,7 +332,7 @@ img {
   transform: translateX(0%);
   width: 100%;
   position: absolute;
-  bottom: -3rem;
+  bottom: -1rem;
   left: -5rem;
 }
 #about .perfil-infos ul {
@@ -420,7 +420,7 @@ img {
   position: relative;
   z-index: 1;
 }
-#projects .card header ul {
+#projects .ul-techs {
   margin-top: 3rem;
   font-size: 1.2rem;
   font-family: "Roboto Mono", monospace;
@@ -465,12 +465,12 @@ img {
   border-radius: 0.3rem;
 }
 .showmore-projects {
-  margin-top: 11rem;
-  width: 100%;
+  margin-top: 10rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
-.showmore-projects a {
+.showmore-projects .showmore-btn {
+  cursor: pointer;
   background-color: var(--color-dark-grey);
   color: var(--color-grey);
   border-radius: 0.6rem;
@@ -480,11 +480,43 @@ img {
   letter-spacing: -11px;
   padding: 1rem 9rem;
   transition: all 0.3s;
+  margin-inline: auto;
+  margin-block: 2rem;
 }
-.showmore-projects a:hover {
+.showmore-projects .showmore-btn:hover {
   letter-spacing: 0px;
 }
-
+.more-projects {
+  margin-inline: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+  visibility: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateY(30%);
+}
+.more-projects.moreProjects{
+  opacity: 1;
+  transform: translateY(0%);
+  visibility: visible;
+}
+.more-projects .itens {
+  width: 30%;
+  background-color: #18181a;
+  border-radius: .6rem;
+  transition: all 0.3s;
+  padding: 2rem 3rem;
+  color: var(--text-color);
+}
+.more-projects .itens:hover {
+  cursor: pointer;
+  transform: translateY(-5%);
+}
+.more-projects .itens h2{
+  color: var(--hovers);
+}
 /* FOOTER ============================================= */
 footer {
   border-top: #5b34d12c 1px solid;
@@ -514,8 +546,6 @@ footer ul li:hover{
   background-color: var(--hovers);
   transform: translateY(-10%);
 }
-
-
 
 
 
