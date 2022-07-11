@@ -484,19 +484,19 @@ img {
   transform: translateY(0%);
   visibility: visible;
 }
-.more-projects .itens {
+.itens {
   width: 30%;
-  background-color: #18181a;
+  background-color: #0000ff;
   border-radius: .6rem;
   transition: all 0.3s;
   padding: 2rem 3rem;
   color: var(--text-color);
 }
-.more-projects .itens:hover {
+.itens:hover {
   cursor: pointer;
   transform: translateY(-5%);
 }
-.more-projects .itens h2{
+.itens h2{
   color: var(--hovers);
 }
 .showmore{
@@ -519,6 +519,8 @@ img {
 .showmore-btn:hover {
   letter-spacing: 0px;
 }
+
+
 
 /* FOOTER ============================================= */
 footer {
