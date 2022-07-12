@@ -421,7 +421,9 @@ img {
   position: relative;
   z-index: 1;
 }
-#projects .ul-techs {
+.ul-techs {
+  overflow-x: auto;
+  padding-bottom: 1rem;
   margin-top: 3rem;
   font-size: 1.2rem;
   font-family: "Roboto Mono", monospace;
@@ -469,7 +471,6 @@ img {
   margin: 0 auto;
 }
 .more-projects {
-  margin-top: 10rem;
   margin-inline: auto;
   flex-wrap: wrap;
   gap: 1rem;
@@ -480,13 +481,14 @@ img {
   transform: translateY(30%);
 }
 .more-projects.moreProjects{
+  margin-top: 10rem;
   opacity: 1;
   transform: translateY(0%);
   visibility: visible;
 }
 .itens {
   width: 30%;
-  background-color: #0000ff;
+  background-color: #16161a;
   border-radius: .6rem;
   transition: all 0.3s;
   padding: 2rem 3rem;
@@ -494,7 +496,7 @@ img {
 }
 .itens:hover {
   cursor: pointer;
-  transform: translateY(-5%);
+  transform: translateY(-4%);
 }
 .itens h2{
   color: var(--hovers);
@@ -524,6 +526,7 @@ img {
 
 /* FOOTER ============================================= */
 footer {
+  margin-top: 9rem;
   border-top: #5b34d12c 1px solid;
   padding: 3rem;
   color: var(--secundary-color-grey);
@@ -638,6 +641,14 @@ footer ul li:hover{
   }
   #projects .card .projects-img {
     margin-top: 1rem;
+    width: 100%;
+  }
+  .more-projects{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .itens{
     width: 100%;
   }
   /* FOOTER ========= */
