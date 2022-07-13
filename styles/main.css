@@ -358,7 +358,7 @@ img {
   background: linear-gradient(to right, var(--hovers), #8c66fe);
   padding-left: 1.5rem;
 }
-.before-div{
+.before-div {
   position: fixed;
   top: 0;
   left: 0;
@@ -467,7 +467,7 @@ img {
   height: 100%;
   border-radius: 0.3rem;
 }
-.showmore-projects{
+.showmore-projects {
   margin: 0 auto;
 }
 .more-projects {
@@ -478,9 +478,9 @@ img {
   visibility: hidden;
   transition: all 0.3s;
   opacity: 0;
-  transform: translateY(30%);
+  transform: translateY(100%);
 }
-.more-projects.moreProjects{
+.more-projects.moreProjects {
   margin-top: 10rem;
   opacity: 1;
   transform: translateY(0%);
@@ -489,7 +489,7 @@ img {
 .itens {
   width: 30%;
   background-color: #16161a;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   transition: all 0.3s;
   padding: 2rem 3rem;
   color: var(--text-color);
@@ -498,10 +498,10 @@ img {
   cursor: pointer;
   transform: translateY(-4%);
 }
-.itens h2{
+.itens h2 {
   color: var(--hovers);
 }
-.showmore{
+.showmore {
   display: flex;
   justify-content: center;
 }
@@ -522,8 +522,6 @@ img {
   letter-spacing: 0px;
 }
 
-
-
 /* FOOTER ============================================= */
 footer {
   margin-top: 9rem;
@@ -542,20 +540,18 @@ footer ul {
   justify-content: center;
   gap: 1rem;
 }
-footer ul li{
+footer ul li {
   display: flex;
   align-items: center;
   background-color: var(--color-dark-grey);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   padding: 1rem;
   transition: all 0.3s;
 }
-footer ul li:hover{
+footer ul li:hover {
   background-color: var(--hovers);
   transform: translateY(-10%);
 }
-
-
 
 /* RESPONSIVE ============================================= */
 @media screen and (max-width: 1000px) {
@@ -583,7 +579,7 @@ footer ul li:hover{
   .content {
     width: min(50rem, 100%);
   }
-  .title-sections::after{
+  .title-sections::after {
     left: 70%;
   }
   /* HEADER ========= */
@@ -627,7 +623,7 @@ footer ul li:hover{
     bottom: -5rem;
   }
   /* PROJECTS ========= */
-  #projects .projects-cards{
+  #projects .projects-cards {
     gap: 9rem;
   }
   #projects .card {
@@ -643,16 +639,16 @@ footer ul li:hover{
     margin-top: 1rem;
     width: 100%;
   }
-  .more-projects{
+  .more-projects {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .itens{
+  .itens {
     width: 100%;
   }
   /* FOOTER ========= */
-  footer .content{
+  footer .content {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -732,7 +728,7 @@ body.mobile #header nav {
   top: 0;
   right: 0;
   background-color: var(--hovers);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 #header nav .before-nav {
   position: fixed;
@@ -741,13 +737,13 @@ body.mobile #header nav {
   top: 0%;
   left: -40vw;
   z-index: -1;
-  backdrop-filter: blur(1.5px) saturate(1.5)
+  backdrop-filter: blur(1.5px) saturate(1.5);
 }
 body.mobile #header ul {
   flex-direction: column;
   margin-bottom: 5rem;
 }
-body.mobile #header .menu ul li a{
+body.mobile #header .menu ul li a {
   font-weight: 700;
   color: var(--text-color);
 }
