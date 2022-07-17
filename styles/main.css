@@ -299,22 +299,20 @@ img {
   margin-inline: auto;
   width: 15rem;
   height: 15rem;
-}
-#about .img-box {
   filter: grayscale(80%);
   border-radius: 50%;
   border: 0.3rem solid var(--color-dark-grey);
   background-color: var(--hovers);
-  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbueGhONl6fZa2W9MPhgW38ZmJciwTIREeQ&usqp=CAU");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMbueGhONl6fZa2W9MPhgW38ZmJciwTIREeQ&usqp=CAU");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 }
 #about .right-about.expandedImg .img-box {
   width: 30rem;
   height: 30rem;
   position: absolute;
-  top: -5rem;
+  top: -6rem;
   left: -5rem;
   border-radius: 0.8rem;
   filter: grayscale(30%);
