@@ -79,13 +79,6 @@ function btnProjects() {
         ["HTML", "CSS", "JavaScript"]
       );
       Card4.onPage();
-      const Card5 = new CardProjects(
-        "https://www.twitch.tv/gaules",
-        "Teste",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        ["HTML", "CSS", "JavaScript"]
-      );
-      Card5.onPage();
 
       showmoreBtn.innerText = "ver menos";
 
